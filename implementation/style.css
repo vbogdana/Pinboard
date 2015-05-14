@@ -1,0 +1,73 @@
+body {
+margin: 0;
+overflow-y: hidden;
+background-color: #FFF5EE;	/* **	FFFAF0 floral, F0FFFF azure, FFF5EE sea shell ** */
+}
+
+.Menu {
+/*height: 300px;
+width: 100%;
+background-color: gray;
+position: absolute;
+top: -200px;
+-webkit-transition: top 1s;
+*/
+}
+
+.Menu:hover {
+top: 0px;
+}
+
+.menu_background {
+/*	background-image: url('menu4.jpg');
+opacity: 0.4;
+width: 100%;
+height: 100%;	*/
+}
+
+.menu_user {
+background: transparent;
+opacity: 0.8;
+}
+
+.Board {
+
+}
+
+.Footer {
+/*height: 300px;
+width: 100%;
+background-color: gray;
+position: absolute;
+bottom: -200px;*/
+}
+
+.PopUpMenu {
+position: absolute;
+bottom: 0;
+width: 300px;
+height: 300px;
+background-color: red;
+}
+
+.MainCircle {
+position: absolute;
+bottom: 5px;
+left: 5px;
+width: 120px;
+height: 120px;
+background-color: blue;
+}
+.Circles {
+list-style: normal;
+}
+
+.Circle {
+position: relative;
+left: 5px;
+float: left;
+top: 60px;
+height: 60px;
+width: 60px;
+background-color: yellow;
+}
