@@ -1,0 +1,5 @@
+Zahtevi za bazom: 
+
+- username korisnika
+- ime i prezime korisnika
+- profil slika korisnika

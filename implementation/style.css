@@ -1,0 +1,14 @@
+body {
+margin: 0;
+overflow-y: hidden;
+background-color: #FFF5EE;	/* **	FFFAF0 floral, F0FFFF azure, FFF5EE sea shell ** */
+}
+
+.Container {
+position: absolute;
+top: 100px;
+left: 15%;
+width: 70%;
+height: 100%;
+background-color: white;
+}
