@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src=""> </script>
+	<script src="js/js_menu/script.js"> </script>
 	
 	<!-- Title of the page -->
 	<head>
@@ -11,8 +11,53 @@
 
 	<body>
 		
+	
 		<!-- Container -->
 		<div class="Container">
+		
+			<!--	Toolbar	-->
+			<div class="Toolbar">
+				<div class="NavButton AddButton" id="1" onClick="menuClick(3)">
+						<div class="ToolbarImg">
+							<img src="images/png/newnote.png" />
+						</div>
+				</div>
+				<div class="HiddenMenu ToolMenu" id="3">
+					<div class="MenuButton">
+						<div class="MenuImg">
+							<img src="images/png/plus.png" />
+						</div>
+					</div>
+					<div class="MenuButton">
+						<div class="MenuImg">
+							<img src="images/png/group.png" />
+						</div>
+					</div>
+					<div class="MenuButton">
+						<div class="MenuImg">
+							<img src="images/png/newnote.png" />
+						</div>
+					</div>
+					<div class="MenuButton">
+						<div class="MenuImg">
+							<img src="images/png/newnote.png" />
+						</div>
+					</div>
+				</div>
+				
+				<div class="NavButton NotifButton" id="2" onClick="menuClick(4)">
+						<div class="ToolbarImg">
+							<img src="images/png/notification.png" />
+						</div>
+				</div>	
+				<div class="HiddenMenu NotifMenu" id="4">
+					<div class="NotifWrapper"> </div>
+					<div class="NotifWrapper"> </div>
+					<div class="NotifWrapper"> </div>	
+					<div class="NotifWrapper"> </div>				
+				</div>
+			</div>	
+		
 		</div>
 
 	</body>
