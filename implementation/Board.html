@@ -10,19 +10,19 @@
 	</head>
 
 	<body>
-		
-	
 		<!-- Container -->
 		<div class="Container">
 		
 			<!--	Toolbar	-->
 			<div class="Toolbar">
-				<div class="NavButton AddButton" id="1" onClick="menuClick(3)">
-						<div class="ToolbarImg">
-							<img src="images/png/newnote.png" />
+				
+				<!-- Menu Buttons -->
+				<div class="ToolButton AddButton" onClick="menuClick(3)">
+						<div class="ToolbarImg" id="1">
+							<img src="images/png/plus.png" />
 						</div>
 				</div>
-				<div class="HiddenMenu ToolMenu" id="3">
+				<div class="HiddenMenu AddMenu" id="3">
 					<div class="MenuButton">
 						<div class="MenuImg">
 							<img src="images/png/plus.png" />
@@ -35,18 +35,18 @@
 					</div>
 					<div class="MenuButton">
 						<div class="MenuImg">
-							<img src="images/png/newnote.png" />
+							<img src="images/png/settings.png" />
 						</div>
 					</div>
 					<div class="MenuButton">
 						<div class="MenuImg">
-							<img src="images/png/newnote.png" />
+							<img src="images/png/important.png" />
 						</div>
 					</div>
 				</div>
 				
-				<div class="NavButton NotifButton" id="2" onClick="menuClick(4)">
-						<div class="ToolbarImg">
+				<div class="ToolButton NotifButton" onClick="menuClick(4)">
+						<div class="ToolbarImg" id="2">
 							<img src="images/png/notification.png" />
 						</div>
 				</div>	
@@ -56,10 +56,26 @@
 					<div class="NotifWrapper"> </div>	
 					<div class="NotifWrapper"> </div>				
 				</div>
-			</div>	
+				<!-- End of Menu Buttons -->
+				
+				<!-- Search bar -->
+				<div class="Searchbar">
+					<div class="Flexsearch">
+							<form class="Flexsearch--form" action="#" method="post">
+								<div class="Flexsearch--input-wrapper">
+									<input class="Flexsearch--input" type="search" placeholder="Search...">
+								</div>
+								<input class="Flexsearch--submit" type="submit" value="&#10140;"/>
+							</form>
+					</div>
+				</div>
+				<!-- End of Search bar -->
+				
+			</div>
+			<!--	End of Toolbar		-->
 		
 		</div>
-
+		<!--	End of Container	-->
 	</body>
 
 </html>

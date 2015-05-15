@@ -13,36 +13,43 @@ background-color: white;
 border-radius: 2px;
 }
 
+/*	**		TOOLBAR		**	*/
 .Toolbar {
 position: absolute;
 top: 0px;
 width: 100%;
-height: 70px;
-background-color: red;
+height: 60px;
+background: #FFFAF0;
 -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
 -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.75);
 box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.75);
 z-index: 1;
 }
 
-.NavButton {
+.ToolButton {
 position: absolute;
-width: 80px;
+width: 60px;
 height: 100%;
-background-color: white;
+background: #FFFAF0;
 }
 
 .ToolbarImg {
-width: 90%;
-height: 90%;
+width: 60%;
+height: 60%;
 position: absolute;
 border-radius: 50%;
-top: 5%;
-left: 5%;
-background-color: red;
+top: 20%;
+left: 20%;
+background: #FFFAF0;
+border: solid 1px white;
+-webkit-transition: transform 1s;
 }
 
-.Toolbar img {
+.ToolbarImg:hover {
+cursor: pointer;
+}
+
+.ToolbarImg img {
 position: absolute;
 top: 15%;
 left: 15%;
@@ -64,9 +71,42 @@ height: 400%;
 background-color: transparent;
 }
 
-.ToolMenu {
+.MenuButton {
+position: relative;
+display: block;
+left: 10px;
+width: 80%;
+height: 25%;
+}
+
+.MenuImg {
+width: 60%;
+height: 60%;
+position: absolute;
+border-radius: 50%;
+top: 20%;
+left: 20%;
+background: #FFFAF0;
+-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.MenuImg:hover {
+cursor: pointer;
+}
+
+.MenuImg img {
+position: absolute;
+top: 15%;
+left: 15%;
+height: 70%;
+width: 70%;
+}
+
+.AddMenu {
 top: -300%;
-width: 100px;
+width: 80px;
 -webkit-transition: top 1s;
 z-index: -1;
 }
@@ -81,14 +121,6 @@ border-radius: 5px;
 background-color: pink;
 }
 
-.MenuButton {
-position: relative;
-display: block;
-left: 10px;
-width: 80%;
-height: 25%;
-}
-
 .NotifWrapper {
 position: relative;
 display: block;
@@ -96,15 +128,109 @@ width: 100%;
 height: 25%;
 }
 
-.MenuImg {
-width: 90%;
-height: 90%;
+/*	**		Searchbar		**	*/
+.Searchbar {
+display: inline;
+width: 45%;
+height: 100%;
 position: absolute;
-border-radius: 50%;
-top: 5%;
-left: 5%;
-background-color: red;
+top: 0%;
+left: 30%;
+}
+
+@import "compass/css3";
+
+.Flexsearch {
+	height: 100%;
+	width: auto;
+	max-width: 100%;
+	overflow: hidden;
+	margin: 0;
+	position: static;
+}
+	
+.Flexsearch--form {
+	overflow: hidden;
+	position: relative;
+}
+	
+.Flexsearch--input-wrapper {
+	padding: 0px 66px 10px 5px; /* Right padding for submit button width */
+	overflow: hidden;
+}
+
+.Flexsearch--input {
+  width: 100%;
+}
+
+/***********************
+ * Configurable Styles *
+ ***********************/
+
+.Flexsearch--input {
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+height: 30px;
+padding: 0 46px 0 10px;
+border-color: #888;
+border-radius: 17px; /* (height/2) + border-width */
+border-style: solid;
+border-width: 2px;
+margin-top: 15px;
+color: #333;
+font-family: 'Calibri Light', sans-serif;
+font-size: 14px;
+-webkit-appearance: none;
+-moz-appearance: none;
+/*
 -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
 -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.75);
 box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+*/
+}
+	
+.Flexsearch--submit {
+position: absolute;
+right: 0;
+top: 0;
+display: block;
+width: 60px;
+height: 30px;
+padding: 0;
+border: none;
+margin-top: 16px; /* margin-top + border-width */
+margin-right: 5px; /* border-width */
+background: transparent;
+color: #888;
+font-family: 'Calibri Light', sans-serif;
+font-size: 40px;
+line-height: 34px;
+}
+
+.Flexsearch--input:focus {
+outline: none;
+border-color: blue;
+}
+
+.Flexsearch--input:focus.Flexsearch--submit {
+color: blue; 
+}
+
+.Flexsearch--input:hover {
+outline: none;
+border-color: blue;
+}
+
+.Flexsearch--submit:hover {
+color: blue;
+cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+	color: #888;  
+}
+
+input:-moz-placeholder {
+  color: #888
 }
