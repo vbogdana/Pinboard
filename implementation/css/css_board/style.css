@@ -234,3 +234,47 @@ cursor: pointer;
 input:-moz-placeholder {
   color: #888
 }
+
+/* **		NOTES		** */
+.Notes {
+margin: 0;
+position: absolute;
+top: 12%;
+left: 10%;
+width: 80%;
+height: 100%;
+background-color: white;
+border-radius: 2px;
+}
+
+.one-note {
+float:left;
+width: 18%;
+height: 250px;
+border: 2px solid;
+margin-left: 15px;
+margin-top: 15px;
+
+}
+
+.one-row{
+margin-left: 0px;
+margin-top: 0px;
+width: 100%;
+height: 265px;
+
+}
+
+.module_holder {
+    background-color: #09C;
+    width: 200px;
+    height: 100px;
+    padding: 4px;
+}
+
+.module_item {
+    background-color: #069;
+    width: 100px;
+    padding: 2px;
+    height: 5px;
+}

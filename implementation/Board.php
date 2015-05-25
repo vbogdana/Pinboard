@@ -1,15 +1,28 @@
+<?php
+require_once('popup-contactform.php');
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en-US">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- CSS FAJLOVI -->
+	<link rel="stylesheet" type="text/css" href="css/css_board/popup-contact.css">
+	<link rel="stylesheet" type="text/css" href="css/css_board/style.css">
+	
+	<!-- SKRIPT FAJLOVI -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 	<script src="js/js_menu/script.js"> </script>
+	
 	
 	<!-- Title of the page -->
 	<head>
 		<title>	Pinboard	</title>	<!-- username korisnika -->
 	</head>
 
-	<body>
+	<body onload="javascript:fg_hideform('fg_formContainer','fg_backgroundpopup');">
+		
 		<!-- Container -->
 		<div class="Container">
 		
@@ -73,9 +86,36 @@
 				
 			</div>
 			<!--	End of Toolbar		-->
+			
+			
+			<!-- NOTES -->
+			<div class="Notes">
+				<div class="one-row">
+					<div class="one-note">
+						<h1><a href='javascript:fg_popup_form("fg_formContainer","fg_form_InnerContainer","fg_backgroundpopup");'> dodaj novu belesku</a></h1>
+					</div>
+					<div class="one-note">
+						<h1> ovo je jedna beleska </h1>
+					</div>
+					<div class="one-note">
+						<h1> ovo je jedna beleska </h1>
+					</div>
+					<div class="one-note">
+						<h1> ovo je jedna beleska </h1>
+					</div>
+					<div class="one-note">
+						<h1> ovo je jedna beleska </h1>
+					</div>		
+					<a id="addemail" href="#">dodaj novu belesku </a>
+				</div>
+			</div>
 		
 		</div>
-		<!--	End of Container	-->
+
+		<?PHP
+		require_once('contactform-code.php');
+		?>
+		
 	</body>
 
 </html>
