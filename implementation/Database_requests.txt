@@ -1,9 +1,0 @@
-Zahtevi za bazom: 
-
-- username korisnika
-- ime i prezime korisnika
-- profil slika korisnika
-- sve grupe korisnika
-- da posaljemo title, content, author, date and time beleske u bazu
- i da se tako insertuje nova beleska i sta sve treba
-- za pocetak model baze
